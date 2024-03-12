@@ -1,0 +1,160 @@
+
+
+.aboutmain {
+    display: flex;
+   
+    gap: 20px;
+    padding: 20px; /* Reduce padding for smaller screens */
+}
+
+.aboutinfo {
+    width: 100%; /* Take full width on smaller screens */
+}
+
+.aboutinfo h3 {
+    font-size: 20px;
+}
+
+.aboutinfo p {
+    font-size: 20px;
+}
+
+/* Media Query for screens wider than 768px (typical tablet size) */
+@media (min-width: 768px) {
+    .aboutinfo {
+        width: 50%; /* Revert to original width for tablets and larger screens */
+    }
+}
+
+/* Media Query for screens wider than 992px (typical laptop/desktop size) */
+@media (min-width: 992px) {
+    .aboutmain {
+        padding: 50px; /* Revert to original padding for larger screens */
+    }
+}
+
+.bgimgabout{
+background-color: whitesmoke;
+}
+/* Default styles */
+.somewords {
+    width: 50%;
+}
+.somewords h3 {
+    color: rgba(163, 4, 4, 0.844);
+}
+.somewords h2 {
+    color: rgba(0, 0, 0, 0.844);
+}
+
+/* Media query for mobile devices */
+@media only screen and (max-width: 768px) {
+    .somewords {
+        width: 100%; /* Make it full width on smaller screens */
+    }
+}
+
+.who {
+    padding: 70px;
+}
+
+/* Media query for mobile devices */
+@media only screen and (max-width: 768px) {
+    .who {
+        padding: 30px; /* Adjust padding for mobile devices */
+    }
+}
+/* Default styles */
+.us {
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+
+}
+
+.us img {
+    max-width: 100%; /* Ensure images don't exceed container width */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 auto; /* Center the image horizontally */
+    padding: 0 15px; /* Add padding to the left and right */
+}
+
+/* Media query for smaller screens (e.g., mobile devices) */
+@media only screen and (max-width: 768px) {
+    .us{
+        flex-direction: column;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 1);
+        margin: 10px;
+
+    }
+    .us img {
+        width: 100%; /* Make images full width on smaller screens */
+        padding: 0 10px; /* Reduce padding for smaller screens */
+    }
+}
+
+.ourself {
+    padding: 50px;
+    font-size: 20px;
+}
+
+/* Media Query for mobile devices */
+@media only screen and (max-width: 768px) {
+    .ourself {
+        padding: 20px; /* Adjust padding for smaller screens */
+        font-size: 16px; /* Adjust font size for smaller screens */
+    }
+}
+/* Default styles */
+.mentor h1 {
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.mentor {
+    margin: 60px;
+}
+
+/* Media query for mobile devices */
+@media only screen and (max-width: 600px) {
+    .mentor h1 {
+        font-size: 28px; /* Adjust font size for smaller screens */
+    }
+    
+    .mentor {
+        margin: 20px; /* Adjust margin for smaller screens */
+    }
+}
+
+.teacher {
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Center content horizontally */
+    padding: 0 15px; /* Add padding on the sides */
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 1);
+
+}
+
+.teacher img {
+    max-width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+    padding-bottom: 15px;
+}
+
+/* Media query for screens smaller than 768px (typical mobile devices) */
+@media only screen and (max-width: 768px) {
+    .teacher img {
+        width: 100%; /* Adjust image width to fit smaller screens */
+        padding-left: 0; /* Remove left padding */
+    }
+    .teacher{
+        flex-direction: column;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 1);
+margin: 2px;
+    }
+}
+
+
+
+

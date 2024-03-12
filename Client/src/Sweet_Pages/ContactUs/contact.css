@@ -1,0 +1,131 @@
+.contactus {
+    border-radius: 25px;
+    padding: 15px;
+}
+
+#contactbtn {
+    border-radius: 15px;
+    padding: 10px 25px;
+}
+
+#contactitems {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    border-right: 1px solid rgba(128, 128, 128, 0.292);
+}
+
+/* Media Query for Mobile Devices */
+@media only screen and (max-width: 768px) {
+    #contactitems {
+        width: 100%; /* Adjusting width for mobile devices */
+    }
+}
+.checke {
+    width: 50%;
+}
+
+.checke p {
+    padding: 30px;
+    font-size: 20px;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+    .checke {
+        width: 100%; /* Adjust width for smaller screens */
+    }
+
+    .checke p {
+        padding: 15px; /* Decrease padding for smaller screens */
+        font-size: 16px; /* Decrease font size for smaller screens */
+    }
+}
+
+/* Base styles */
+.submitname {
+    color: rgb(0, 0, 0);
+    padding: 15px;
+}
+
+#submitMain {
+    display: flex;
+    padding: 5px;
+    gap: 10px;
+}
+
+/* Responsive styles for mobile devices */
+@media only screen and (max-width: 768px) {
+    #submitMain {
+     
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        height: auto; /* Adjust height automatically */
+    }
+}
+
+
+/* Common styles for both PCs and mobiles */
+.submiticon {
+    font-size: 40px;
+    padding: 5px;
+    margin: 5px;
+}
+
+/* Additional styles for PC */
+#submiticon1 {
+    font-size: 40px;
+    padding: 10px;
+}
+
+/* Media query for mobile devices */
+@media only screen and (max-width: 600px) {
+    .submiticon {
+        font-size: 30px; /* Adjust font size for smaller screens */
+        padding: 8px; /* Adjust padding for smaller screens */
+        margin: 3px; /* Adjust margin for smaller screens */
+    }
+
+    #submiticon1 {
+        font-size: 35px; /* Adjust font size for smaller screens */
+        padding: 8px; /* Adjust padding for smaller screens */
+    }
+}
+
+
+.iconlast {
+    display: flex;
+    padding: 5px;
+}
+
+.inputContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    /* border: 1px solid red; */
+}
+.inputContainer label{
+    /* border: 1px solid red; */
+    width: 70%;
+    margin: 5px;
+    color: black;
+    font-weight: 500;
+    
+
+}
+.inputContainer input{
+    width: 70%;
+    border: 1px solid black;
+    outline-color: rgb(10, 149, 102);
+}   
+.inputContainer textarea{
+    width: 70%;
+    height: 100px;
+    resize: vertical;
+    border-radius: 10px;
+    outline-color: rgb(10, 149, 102);
+
+}

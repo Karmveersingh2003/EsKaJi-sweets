@@ -1,0 +1,172 @@
+/* Base styles */
+.Auth-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px; /* Reduce padding for smaller screens */
+  background-image: url("https://frgsystems.com/wp-content/uploads/2020/03/Bolstering-Healthcare-Information-Security-600x390.jpg");
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 88vh;
+}
+
+.Auth-form {
+  width: 90%; /* Adjust width to a percentage for better responsiveness */
+  max-width: 420px; /* Maximum width for larger screens */
+  box-shadow: rgb(0 0 0 / 16%) 1px 1px 10px;
+  transition: 0.5s ease;
+  padding: 30px;
+  border-radius: 8px;
+  background-color: white;
+}
+
+.Auth-form:hover {
+  transform: translateY(-5px);
+  cursor: pointer;
+}
+
+.Auth-form-content {
+  margin: 20px;
+}
+
+.Auth-form-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: rgb(34, 34, 34);
+  font-weight: 800;
+}
+
+/* Media Queries for responsiveness */
+@media screen and (max-width: 768px) {
+  .Auth-form-container {
+      padding: 30px; /* Adjust padding for smaller screens */
+  }
+
+  .Auth-form {
+      width: 80%; /* Adjust width for smaller screens */
+  }
+
+  .Auth-form-title {
+      font-size: 28px; /* Increase font size for smaller screens */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .Auth-form-container {
+      padding: 20px; /* Further reduce padding for smaller screens */
+  }
+
+  .Auth-form {
+      padding: 20px; /* Reduce padding for smaller screens */
+  }
+
+  .Auth-form-title {
+      font-size: 24px; /* Further increase font size for smaller screens */
+  }
+}
+
+  /* Default styles for label */
+label {
+  font-size: 18px;
+  font-weight: 600;
+  color: rgb(34, 34, 34);
+  padding: 5px;
+}
+
+/* Media query for smaller devices (e.g., mobile phones) */
+@media only screen and (max-width: 768px) {
+  label {
+    font-size: 16px; /* Adjust font size for smaller screens */
+    padding: 3px; /* Adjust padding for smaller screens */
+  }
+}
+
+.email {
+  padding: 20px;
+  display: flex;
+  align-items: center; /* changed from align-content to align-items */
+  justify-content: center;
+  gap: 10px;
+  height: 70px;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+  .email {
+      flex-direction: column;
+      height: auto; /* Adjust height for mobile */
+  }
+}
+
+input{
+    text-align: center;
+}
+.password {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  height: 70px;
+}
+
+/* Responsive Styling */
+@media only screen and (max-width: 768px) {
+  .password {
+      flex-direction: column;
+      height: auto;
+      padding: 10px;
+  }
+}
+
+
+.submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Media Query for Mobile Devices */
+@media only screen and (max-width: 600px) {
+  .submit {
+      flex-direction: column; /* Stack items vertically on smaller screens */
+      padding: 10px; /* Adjust padding for smaller screens */
+  }
+}
+
+/* Default styles for the button */
+button {
+  padding: 10px;
+  border-radius: 10%;
+  width: 100px;
+  font-size: 14px;
+}
+
+/* Media query for mobile devices */
+@media only screen and (max-width: 600px) {
+  button {
+      width: 80px; /* Adjust width for smaller screens */
+      font-size: 12px; /* Adjust font size for smaller screens */
+  }
+}
+
+.Fpass {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  padding: 20px;
+  gap: 7px;
+}
+
+/* Media Query for Mobile Devices */
+@media only screen and (max-width: 600px) {
+  .Fpass {
+      flex-direction: column; /* Stack items vertically on small screens */
+      align-items: center; /* Center items horizontally on small screens */
+      padding: 10px; /* Decrease padding for smaller screens */
+      gap: 5px; /* Decrease gap between items for smaller screens */
+  }
+}

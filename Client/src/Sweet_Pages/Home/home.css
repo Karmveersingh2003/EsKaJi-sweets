@@ -1,0 +1,271 @@
+
+*{
+   
+    box-sizing: border-box;
+  
+}.container {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("https://static.vecteezy.com/system/resources/previews/005/561/037/non_2x/traditional-indian-sweets-on-rustic-background-flat-lay-photo.jpg");
+    height: 75vh;
+    opacity: 0.9;
+    color: orangered;
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    padding-bottom: 60px;
+    padding-top: 20px;
+}
+
+.container h4 {
+    font-family: 'Kaushan Script', cursive;
+    font-size: larger;
+}
+
+/* Responsive Styling for Mobile Devices */
+@media only screen and (max-width: 768px) {
+    .container {
+        height: auto; /* Adjust height for smaller screens */
+        font-size: 30px; /* Decrease font size for smaller screens */
+        padding-bottom: 30px; /* Adjust padding for smaller screens */
+        padding-top: 10px; /* Adjust padding for smaller screens */
+    }
+    
+    .container h4 {
+        font-size: medium; /* Adjust font size for smaller screens */
+    }
+}
+/* Base styles */
+.Rbox {
+    display: flex;
+    position: relative;
+    height: 250px;
+    margin: 20px; /* Reduced margin for smaller screens */
+    justify-content: space-evenly;
+}
+
+.belief,
+.values,
+.team,
+.infra {
+    text-align: left;
+    padding: 20px;
+    opacity: 0.6;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.infra p,
+.belief p,
+.team p,
+.values p {
+    padding: 10px;
+    margin: 20px 0; /* Reduced margin for smaller screens */
+    font-size: larger;
+}
+
+.heading {
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.heading h2 {
+    font-size: 30px;
+    color: brown;
+    font-family: 'Acme', sans-serif;
+}
+
+.heading p {
+    padding: 5px;
+}
+
+/* Media query for mobile devices */
+@media only screen and (max-width: 600px) {
+    .heading h2 {
+        font-size: 24px; /* Adjust font size for smaller screens */
+    }
+}
+
+
+.member {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Media query for mobile devices */
+@media only screen and (max-width: 600px) {
+    .member {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+/* Media Queries for responsiveness */
+@media only screen and (max-width: 768px) {
+    /* Adjustments for smaller screens */
+    .Rbox {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        margin: 10px;
+    }
+
+    .belief,
+    .values,
+    .team,
+    .infra {
+        width: 90%; /* Adjust the width for better display on smaller screens */
+        margin-bottom: 20px; /* Add space between items */
+    }
+}
+.OurTeam {
+    max-width: 100%;
+    margin: 5px;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+    .OurTeam {
+        /* Adjust styles for mobile devices */
+        max-width: 100%;
+        margin: 2px; /* Adjust margin for smaller screens */
+    }
+}
+
+
+.m1 {
+    margin: 10px;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    transition: 0.5s ease;
+    width: 90%; /* Adjust width for smaller screens */
+    max-width: 400px; /* Max width for larger screens */
+}
+
+.m1 img {
+    height: 60%;
+    width: 30%;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto; /* Simplified centering */
+}
+
+.m1 h2 {
+    color: brown;
+    font-family: 'Chakra Petch', sans-serif;
+    text-align: center;
+}
+
+.m1 p {
+    padding: 15px; /* Reduced padding for smaller screens */
+    text-align: center;
+}
+
+.m1:hover {
+    transform: translateY(-5px);
+}
+
+/* Media Query for Mobile Devices */
+@media only screen and (max-width: 600px) {
+    .m1 {
+        padding: 10px; /* Adjust padding for smaller screens */
+        height: auto; /* Let content determine height */
+    }
+    
+    .m1 img {
+        height: 50%;
+        width: 25%;
+    }
+}
+
+#homevedio video {
+    height: 600px;
+    width: 100%;
+    object-fit: cover;
+}
+
+#content_onvedio {
+    position: absolute;
+    top: 130%;
+    left: 50%; /* Adjusted to center horizontally */
+    transform: translateX(-50%); /* Adjusted to center horizontally */
+    color: rgb(0, 0, 0);
+}
+
+/* Media query for screens smaller than 768px (typical mobile devices) */
+@media screen and (max-width: 768px) {
+    #homevedio video {
+        height: auto; /* Allow the height to adjust based on the aspect ratio */
+    }
+
+    #content_onvedio {
+        position: static; /* Reset position to static */
+        transform: none; /* Reset transform */
+        text-align: center; /* Center align text */
+        margin-top: 20px; /* Add some space from the top */
+    }
+}
+
+
+
+#content_onvedio h2 {
+    font-weight: bolder;
+    font-family: Agbalumo;
+}
+
+#content_onvedio button {
+    border-radius: 20px;
+    margin: 5px;
+    margin-left: 65px;
+}
+
+#content_onvedio button:hover {
+    background-color: gray;
+}
+
+#content_onvedio button a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+#content_onvedio button a:hover {
+    color: rgb(255, 255, 255);
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+    #content_onvedio button {
+        margin-left: 0;
+    }
+}
+
+
+/* Common styles for both desktop and mobile */
+.collection {
+    display: flex;
+    margin-top: 60px;
+margin: 10px;
+gap:20px;
+}
+
+.Video {
+    margin-top: 60px;
+    object-fit: cover;
+}
+
+/* Responsive styles for mobile devices */
+@media only screen and (max-width: 600px) {
+    .collection {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+    }
+    
+    .Video {
+        width: 100%; /* Make the video fill the width of the container */
+        height: auto; /* Maintain the aspect ratio */
+    }
+}

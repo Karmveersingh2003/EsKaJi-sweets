@@ -1,0 +1,94 @@
+#footerIcon img {
+    max-width: 100%; /* Ensures the image doesn't exceed its container */
+    height: 130px; /* Allows the image to maintain its aspect ratio */
+    padding: 15px; /* Adjust padding as needed for spacing */
+}
+
+#footerIcon {
+    padding: 15px; /* Adjust padding as needed for spacing */
+}
+
+#footerLinks {
+    display: flex;
+    flex-wrap: wrap; /* Allows the links to wrap to the next line on smaller screens */
+    padding: 10px; /* Adjust padding as needed for spacing */
+}
+
+/* Media query for screens smaller than 768px (typical tablets and mobile devices) */
+@media screen and (max-width: 768px) {
+    #footerIcon img {
+        height: auto; /* Allow image to scale with smaller screens */
+        width: auto; /* Allow image to scale with smaller screens */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+        padding: 15px; /* Adjust padding as needed for spacing */
+    }
+
+    #footerIcon {
+        padding: 10px; /* Adjust padding as needed for spacing */
+    }
+
+    #footerLinks {
+        flex-direction: column; /* Stack links vertically on smaller screens */
+        padding: 5px; /* Adjust padding as needed for spacing */
+    }
+}
+
+/* Common styles for both PC and mobile */
+.footernav {
+    padding: 50px;
+}
+
+.footernav img {
+    height: 200px;
+    width: 200px;
+}
+
+.footernav h3 {
+    padding-bottom: 30px;
+    font-size: 20px;
+}
+
+/* Responsive styles for mobile devices */
+@media only screen and (max-width: 767px) {
+    .footernav {
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+
+    .footernav img {
+        height: 150px; /* Adjust image height for smaller screens */
+        width: 150px; /* Adjust image width for smaller screens */
+    }
+
+    .footernav h3 {
+        font-size: 16px; /* Adjust font size for smaller screens */
+        padding-left: 112px;
+    }
+}
+
+.footerdetails {
+    display: flex;
+    padding: 5px;
+    gap: 10px;
+    font-weight: 500;
+    font-size: 20px;
+    height: 50px;
+    color: rgba(128, 128, 128, 0.959);
+}
+
+.footerdetails h5 a {
+    color: rgba(128, 128, 128, 0.959);
+    text-decoration: none;
+}
+
+/* Media query for mobile devices */
+@media only screen and (max-width: 600px) {
+    .footerdetails {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .footerdetails h5 {
+        margin: 5px 0;
+    }
+}
